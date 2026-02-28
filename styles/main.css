@@ -252,6 +252,18 @@ body{
   padding: 0 1rem;
 }
 
+/* Desktop: lock to 3 columns so we can place the Socials card */
+@media (min-width: 850px) {
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-card.socials-card {
+    grid-column: 2;      /* center column */
+    justify-self: stretch;
+  }
+}
+
 .contact-card {
   background: #111;
   border: 1px solid #222;
@@ -686,4 +698,30 @@ body{
   color: #fff !important;
   text-decoration: none !important;
   -webkit-text-fill-color: #fff !important; /* iOS Safari */
+}
+
+/*Dress code button css*/
+
+.info-section {
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+}
+
+.info-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.menu-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.menu-button:hover {
+  background: white;
+  color: black;
 }
