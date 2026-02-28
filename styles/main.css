@@ -678,14 +678,12 @@ body{
 
 /*Phone color*/
 
-.phone-link {
-  color: white !important;
-  text-decoration: none;
-}
-
+.phone-link,
 .phone-link:visited,
 .phone-link:active,
-.phone-link:hover {
-  color: white !important;
-  text-decoration: none;
+.phone-link:hover,
+.phone-link:focus {
+  color: #fff !important;
+  text-decoration: none !important;
+  -webkit-text-fill-color: #fff !important; /* iOS Safari */
 }
