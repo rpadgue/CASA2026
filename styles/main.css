@@ -679,13 +679,13 @@ body{
 /*Phone color*/
 
 .phone-link {
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 
 .phone-link:visited,
 .phone-link:active,
 .phone-link:hover {
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
